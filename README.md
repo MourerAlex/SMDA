@@ -38,6 +38,6 @@ res$COV$cluster
 ```
 
 ## References
-* [1] M. Chavent, J. Lacaille, A. Mourer, M. Olteanu, (2021).Handling Correlations in Random Forests: which Impacts on Variable Importance and Model Interpretability?. To appear in ESANN 2021 proceedings.
+* [1] M. Chavent, J. Lacaille, A. Mourer, M. Olteanu, (2021).Handling Correlations in Random Forests: which Impacts on Variable Importance and Model Interpretability? To appear in ESANN 2021 proceedings.
 * [2] L. Breiman,  Random forests.Machine learning, 45(1):5–32, 2001.
 * [3] M. Chavent, R. Genuer, and J. Saracco.  Combining clustering of variables and feature selection using random forests. Communications in Statistics-Simulation and Computation,50(2):426–445, 2021.
