@@ -2,6 +2,8 @@
 
 The present repository implement a method described in [1].
 
+The code implementing the method is available in the file "function_SMDA.R" and with it is provided the function to simulate data (in the file named "simu_Model1.r") and an example to illustrate the method ("Example1.R").
+
 ## Resume: 
 
 The present repository implement a method that tackles the issues of model interpretability and variable importance in random forests, in the presence of correlated input variables. Variable importance criteria based on random permutations are known to be sensitive when input variables are correlated, and may lead for instance to unreliability in the importance ranking. In order to overcome some of the problems raised by correlation, an original variable importance measure is introduced. The proposed measure, called SMDA for Synthetic Mean Decrease Accuracy, builds upon an algorithm which clusters the input variables based on their correlations, and summarises each such cluster by a synthetic variable.
@@ -20,7 +22,20 @@ The algorithm works in several steps:
 * The MDA of each synthetic variable is computed.
 * The SMDA is the importance of the original variables through the synthetic ones (more details in [1]).
 
-The code implementing the method is available in the file "function_SMDA.R" and with it is provided the function to simulate data (in the file named "simu_Model1.r") and an example to illustrate the method ("Example1.R").
+### Usage
+For more examples, see the "Example1.R" file. As a first example you could try 
+
+```R  
+# Run the SMDA function
+res <- SMDA(y = mtcars$mpg, X = mtcars[,-1])
+
+# results
+df_res <- data.frame(names = colnames(X), SMDA = res$SMDA) 
+print(df_res[order(df_res$SMDA),])
+
+# What clusters were found
+res$COV$cluster
+```
 
 ## References
 * [1] Chavent, M., Lacaille, J., Mourer, A., Olteanu, M. (2021).Handling Correlations in Random Forests: which Impacts on Variable Importance and Model Interpretability?. To appear in ESANN 2021 proceedings.
