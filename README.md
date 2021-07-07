@@ -23,6 +23,6 @@ The algorithm works in several steps:
 The code implementing the method is available in the file "function_SMDA.R" and with it is provided the function to simulate data (in the file named "simu_Model1.r") and an example to illustrate the method ("Example1.R").
 
 ## References
-[1] Chavent, M., Lacaille, J., Mourer, A., Olteanu, M. (2021).Handling Correlations in Random Forests: which Impacts on Variable Importance and Model Interpretability?. To appear in ESANN 2021 proceedings.
-[2] Leo Breiman.  Random forests.Machine learning, 45(1):5–32, 2001.
-[3] M. Chavent, R. Genuer, and J. Saracco.  Combining clustering of variables and feature se-lection using random forests. Communications in Statistics-Simulation and Computation,50(2):426–445, 2021.
+* [1] Chavent, M., Lacaille, J., Mourer, A., Olteanu, M. (2021).Handling Correlations in Random Forests: which Impacts on Variable Importance and Model Interpretability?. To appear in ESANN 2021 proceedings.
+* [2] Leo Breiman.  Random forests.Machine learning, 45(1):5–32, 2001.
+* [3] M. Chavent, R. Genuer, and J. Saracco.  Combining clustering of variables and feature se-lection using random forests. Communications in Statistics-Simulation and Computation,50(2):426–445, 2021.
