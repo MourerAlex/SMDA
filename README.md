@@ -6,11 +6,10 @@ The present repository implement a method that tackles the issues of model inter
 
 ## Short Description:
 
-### Objectives of variable importance 
+### Objectives of variable importance 
 Computing variable importance aims at two goals: i) find the contribution of each input variable to the prediction, and ii) measure the dependency between the input variables and the output one. Most of the importance measure in Random Forests (RF), such as MDA and MDI, focus on objective i) while this method aims to solve objective ii).
 
 ### Algorithm
-
 The algorithm works in several steps:
 * The input variables are clustered according to their correlation (between them) with a clustering of variables. 
 * The number of cluster is choosen in a supervised manner (more details later).
