@@ -18,7 +18,7 @@ The algorithm works in several steps:
 * The input variables are clustered according to their correlation (between them) with a clustering of variables [3]. 
 * The number of cluster is choosen in a supervised manner (more details in [3]).
 * Each cluster is resumed by a synthetic variable: the first principal component of the variables of the cluster.
-* A RF is fit on these synthetic variable. 
+* A RF is fit on these synthetic variables. 
 * The MDA of each synthetic variable is computed.
 * The SMDA is the importance of the original variables through the synthetic ones (more details in [1]).
 
