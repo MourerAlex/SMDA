@@ -11,7 +11,7 @@ The present repository implement a method that tackles the issues of model inter
 ## Short Description
 
 ### Objectives of measuring variable importance
-Computing variable importance aims at two goals: i) find the contribution of each input variable to the prediction, and ii) measure the dependency between the input variables and the output one. Most of the importance measure in Random Forests (RF) such as the MDA [2], focus on objective i) while this method aims to solve objective ii).
+Computing variable importance aims at two goals: i) find the contribution of each input variable to the prediction, and ii) measure the dependency between the input variables and the output one. Most of the importance measure in Random Forests (RF) such as the MDA (also called permutation variable importance) [2], focus on objective i) while this method aims to solve objective ii).
 
 ### Algorithm
 The algorithm works in several steps:
