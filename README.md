@@ -26,6 +26,9 @@ The algorithm works in several steps:
 For more examples, see the "Example1.R" file. As a first example you could try 
 
 ```R  
+# load the function
+source("function_SMDA.R")
+
 # Run the SMDA function
 res <- SMDA(y = mtcars$mpg, X = mtcars[,-1])
 
