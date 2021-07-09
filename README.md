@@ -4,7 +4,7 @@ The present repository implement a method described in [1].
 
 The code implementing the method is available in the file "function_SMDA.R" and with it is provided the function to simulate data (in the file named "simu_Model1.r") and an example to illustrate the method ("Example1.R").
 
-## Resume
+## Summary
 
 The present repository implement a method that tackles the issues of model interpretability and variable importance in random forests, in the presence of correlated input variables. Variable importance criteria based on random permutations are known to be sensitive when input variables are correlated, and may lead for instance to unreliability in the importance ranking. In order to overcome some of the problems raised by correlation, an original variable importance measure is introduced. The proposed measure, called SMDA for Synthetic Mean Decrease Accuracy, builds upon an algorithm which clusters the input variables based on their correlations, and summarises each such cluster by a synthetic variable.
 
